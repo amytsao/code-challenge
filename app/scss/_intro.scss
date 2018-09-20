@@ -1,0 +1,59 @@
+#intro {
+  background: linear-gradient(
+                     rgba(20,20,20, .8),
+                     rgba(20,20,20, .8)),
+                     url(../images/banner-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 10rem;
+  min-height: 30rem;
+
+  h1,
+  h3 {
+    color: $intro;
+
+    .fas {
+      color: $secondary;
+    }
+  }
+
+  .subtitle {
+    color: $secondary;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  img {
+    margin-top: 2rem;
+  }
+
+  .testimonials {
+    /* get rid of spacing between images */
+    font-size: 0;
+  }
+
+  .testiminonial-content {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 2rem 0;
+    vertical-align: top;
+
+    i {
+      color: $secondary;
+      font-size: 3rem;
+      padding: 1rem;
+    }
+
+    .quote {
+      margin: 0 auto;
+      max-width: 15rem;
+
+      .subtitle {
+        font-weight: 100;
+        text-transform: none;
+      }
+    }
+  }
+}

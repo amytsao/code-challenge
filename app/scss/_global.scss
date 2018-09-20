@@ -1,0 +1,97 @@
+// Global styling for this template
+
+body {
+  @include body-font;
+  color: $primary;
+  background: $bkg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $gray-800;
+  margin: 0 0 1rem 0;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h5 {
+  color: $secondary;
+  font-size: 2rem;
+  font-weight: normal;
+  text-transform: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* sections and columns */
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.row {
+  /* get rid of extra space */
+  font-size: 0;
+  div {
+    margin: 0 auto;
+  }
+
+  .two-col {
+    display: inline-block;
+    font-size: 1.2rem;
+    max-width: 49.5%;
+    vertical-align: top;
+  }
+
+  .three-col {
+    display: inline-block;
+    font-size: 1.1rem;
+    max-width: 32.5%;
+    vertical-align: top;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 768px) {
+    .two-col,
+    .three-col {
+      display: block;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    display: block;
+  }
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  font-weight: bold;
+}

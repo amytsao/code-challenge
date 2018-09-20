@@ -1,0 +1,97 @@
+/** for everything else **/
+
+/* search box */
+.search-bar {
+  position: relative;
+}
+
+.search-bar .icon {
+  color: $white;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 1rem;
+  position: absolute;
+  top: 43%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-text-stroke: 3px $secondary;
+}
+
+input.job-search {
+  background: $secondary;
+  border: none;
+  box-sizing : border-box;
+  color: $white;
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  padding: 1rem 4rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+
+  &::placeholder {
+      color: $white;
+      opacity: 1;
+  }
+
+  /* for ie */
+  &:-ms-input-placeholder,
+  &::-ms-input-placeholder {
+    color: $white;
+  }
+}
+
+#awards {
+  .row {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+  img {
+    height: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      display: block;
+    }
+    img {
+      margin-top: 1rem;
+    }
+  }
+}
+
+#culture {
+/* images */
+  img {
+    max-width: 49.5%;
+    width: 49.5%;
+  }
+
+  /* make first image large */
+  img:first-child {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 1068px) {
+    .two-col {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+/* photos */
+#photos {
+  img {
+    padding: 0.5rem;
+  }
+}
